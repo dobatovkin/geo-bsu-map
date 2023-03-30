@@ -1,14 +1,12 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-    body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-</style>
 
 <body>
 
@@ -20,7 +18,7 @@
         const map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/streets-v12', // style URL
-            center: [27.54875, 53.89310], // starting position [lng, lat]
+            center: [27.54875, 53.89310], // starting pos[lng, lat]
             zoom: 19, // starting zoom
             pitch: 40,
             bearing: 20,
@@ -53,3 +51,5 @@
     </script>
 
 </body>
+
+</html>
