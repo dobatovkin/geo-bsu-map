@@ -12,26 +12,24 @@ const map = new mapboxgl.Map({
   antialias: true,
 });
 
-map.on('load', () => {
-  map.addSource('floorplan', {
+map.on('load', () => { // execute after map has finished loading
+  map.addSource('geo-src-outside', {
     type: 'geojson',
     data: 'geo-bsu.geojson',
   });
   map.addLayer({
-    id: 'room-extrusion',
+    id: 'geo-outside',
     type: 'fill-extrusion',
-    source: 'floorplan',
+    source: 'geo-src-outside',
+    layout: {
+      // make the layer visible by default.
+      visibility: 'visible',
+    },
     paint: {
-      // Get the `fill-extrusion-color` from the source `color` property.
+      // get the extrusion parameters from the source properties
       'fill-extrusion-color': ['get', 'color'],
-
-      // Get `fill-extrusion-height` from the source `height` property.
       'fill-extrusion-height': ['get', 'height'],
-
-      // Get `fill-extrusion-base` from the source `base_height` property.
       'fill-extrusion-base': ['get', 'base_height'],
-
-      // Make extrusions slightly opaque to see through indoor walls.
       'fill-extrusion-opacity': 0.5,
     },
   });

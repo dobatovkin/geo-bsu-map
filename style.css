@@ -24,5 +24,6 @@ body {
     padding: 1%;
     margin: 1%;
     overflow: hidden;
+    resize: both;
 }
 
