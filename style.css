@@ -16,14 +16,15 @@ body {
     position: absolute;
     z-index: 1;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 25%;
-    height: 15%;
+    top: 5px;
+    left: 5px;
     background-color: white;
     border-radius: 10px;
     padding: 1%;
     margin: 1%;
     overflow: hidden;
-    resize: both;
+}
+
+#faculty-menu {
+    font-weight: 700;
 }
