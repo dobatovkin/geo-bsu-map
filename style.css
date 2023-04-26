@@ -15,6 +15,7 @@ body {
 #menu {
     position: absolute;
     z-index: 1;
+    position: absolute;
     top: 0;
     bottom: 0;
     width: 25%;
@@ -26,4 +27,3 @@ body {
     overflow: hidden;
     resize: both;
 }
-
