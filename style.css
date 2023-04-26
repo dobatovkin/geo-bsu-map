@@ -1,6 +1,7 @@
 body { 
     margin: 0; 
     padding: 0; 
+    font-family: "Montserrat", sans-serif;
 }
 
 #map { 
@@ -11,8 +12,9 @@ body {
     height: 100%;
 }
 
-#white-box {
+#menu {
     position: absolute;
+    z-index: 1;
     top: 0;
     bottom: 0;
     width: 25%;
@@ -21,5 +23,6 @@ body {
     border-radius: 10px;
     padding: 1%;
     margin: 1%;
-    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
 }
+
