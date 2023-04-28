@@ -96,13 +96,12 @@ map.on('idle', () => {
     const link = document.createElement('input');
     link.id = id;
     link.type = 'radio';
-    link.href = '#';
     link.textContent = id;
     link.className = 'active';
 
     const label = document.createElement('label');
-    label.for = id;
-    // label.appendChild('1');
+    label.htmlFor = id;
+    label.textContent = id;
 
     // Show or hide layer when the toggle is clicked.
     link.onclick = function (e) {
@@ -130,6 +129,7 @@ map.on('idle', () => {
     };
 
     const layers = document.getElementById('level-menu');
+    layers.appendChild(label);
     layers.appendChild(link);
 }
 });
