@@ -24,7 +24,7 @@ map.on('load', () => { // execute after map has finished loading
     source: 'geo-src-outside',
     layout: {
       // make the layer visible by default.
-      visibility: 'none',
+      visibility: 'visible',
     },
     paint: {
       // get the extrusion parameters from the source properties
@@ -45,7 +45,7 @@ map.on('load', () => { // execute after map has finished loading
     source: 'geo-src-1',
     layout: {
       // disable layer by default.
-      visibility: 'visible',
+      visibility: 'none',
     },
     paint: {
       'fill-extrusion-color': ['get', 'color'],
