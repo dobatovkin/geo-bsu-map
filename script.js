@@ -92,21 +92,30 @@ map.on('idle', () => {
         continue;
     }
 
-    // Create a link.
+    // create a checkbox w/ event.
     const link = document.createElement('input');
     link.id = id;
-    link.type = 'radio';
-    link.textContent = id;
+    link.type = 'checkbox';
     link.className = 'active';
+
+    const initialVisibility = map.getLayoutProperty(
+      id,
+      'visibility'
+    );
+    
+    // set check if layer is visible initially
+    if (initialVisibility === 'visible') {
+      link.checked = true;
+    }
 
     const label = document.createElement('label');
     label.htmlFor = id;
     label.textContent = id;
 
-    // Show or hide layer when the toggle is clicked.
+    // show or hide layer when the toggle is clicked.
     link.onclick = function (e) {
-        const clickedLayer = this.textContent;
-        e.preventDefault();
+        const clickedLayer = this.id;
+        // e.preventDefault();
         e.stopPropagation();
 
         const visibility = map.getLayoutProperty(
@@ -116,7 +125,10 @@ map.on('idle', () => {
 
         // Toggle layer visibility by changing the layout object's visibility property.
         if (visibility === 'visible') {
-            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            map.setLayoutProperty(
+              clickedLayer,
+              'visibility',
+              'none');
             this.className = '';
         } else {
             this.className = 'active';
@@ -125,6 +137,7 @@ map.on('idle', () => {
                 'visibility',
                 'visible'
             );
+
         }
     };
 
