@@ -4,6 +4,8 @@
 
 scratch/
 
+.vscode/
+
 # Logs
 logs
 *.log
