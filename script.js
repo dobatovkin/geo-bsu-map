@@ -86,6 +86,8 @@ map.on('idle', () => {
   // enumerate ids for layers
   const toggleableLayerIds = ['geo-1', 'geo-2', 'geo-outside'];
   
+  let activeLayer = 'geo-outside'
+
   for (const id of toggleableLayerIds) {
     // skip layers that already have a button set up.
     if (document.getElementById(id)) {
@@ -130,14 +132,13 @@ map.on('idle', () => {
               'visibility',
               'none');
             this.className = '';
-        } else {
+          } else {
             this.className = 'active';
             map.setLayoutProperty(
-                clickedLayer,
-                'visibility',
-                'visible'
+              clickedLayer,
+              'visibility',
+              'visible'
             );
-
         }
     };
 
@@ -145,5 +146,16 @@ map.on('idle', () => {
     const layers = document.getElementById('level-menu');
     layers.appendChild(label);
     layers.appendChild(link);
-}
+
+    // when a click event occurs on a feature in the layer, open a popup at the
+    // location of the feature, with its properties
+    for (const id of toggleableLayerIds) {
+      map.on('click', id, (e) => {
+        new mapboxgl.Popup()
+          .setLngLat(e.lngLat)
+          .setHTML('<p>level: ' + e.features[0].properties.level + '</p><p>height: ' + e.features[0].properties.height + '</p>')
+          .addTo(map);
+      });
+    };
+  }
 });
