@@ -11,7 +11,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": 1,
+        "level": 1,
         "color": "grey",
         "base_height": 0.0,
         "height": 4.0
@@ -2263,7 +2263,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.1
@@ -2301,7 +2301,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.2
@@ -2339,7 +2339,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.3
@@ -2377,7 +2377,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.4
@@ -2415,7 +2415,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.5
@@ -2465,7 +2465,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.6
@@ -2515,7 +2515,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.7
@@ -2553,7 +2553,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.8
@@ -2591,7 +2591,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 0.9
@@ -2629,7 +2629,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 1.0
@@ -2667,7 +2667,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 1.1
@@ -2723,7 +2723,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": null
@@ -2736,7 +2736,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 1.1
@@ -2858,7 +2858,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Level": null,
+        "level": 1,
         "color": "grey",
         "base_height": null,
         "height": 1.1
