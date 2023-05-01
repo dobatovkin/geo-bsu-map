@@ -23,7 +23,7 @@ map.on('load', () => { // execute after map has finished loading
     type: 'fill-extrusion',
     source: 'geo-src-outside',
     layout: {
-      // make the layer visible by default.
+      // make the layer visible by default
       visibility: 'visible',
     },
     paint: {
@@ -44,7 +44,7 @@ map.on('load', () => { // execute after map has finished loading
     type: 'fill-extrusion',
     source: 'geo-src-1',
     layout: {
-      // disable layer by default.
+      // disable layer by default
       visibility: 'none',
     },
     paint: {
@@ -64,7 +64,7 @@ map.on('load', () => { // execute after map has finished loading
     type: 'fill-extrusion',
     source: 'geo-src-2',
     layout: {
-      // disable layer by default.
+      // disable layer by default
       visibility: 'none',
     },
     paint: {
@@ -76,9 +76,9 @@ map.on('load', () => { // execute after map has finished loading
   });
 });
 
-// after the last frame rendered before the map enters an "idle" state.
+// after the last frame rendered before the map enters an "idle" state
 map.on('idle', () => {
-  // if these two layers were not added to the map, abort
+  // if these layers were not added to the map, abort
   if (!map.getLayer('geo-outside') || !map.getLayer('geo-1') || !map.getLayer('geo-2')) {
     return;
   };
@@ -92,7 +92,7 @@ map.on('idle', () => {
         continue;
     }
 
-    // create a checkbox w/ event.
+    // create a checkbox w/ event
     const link = document.createElement('input');
     link.id = id;
     link.type = 'checkbox';
@@ -112,7 +112,7 @@ map.on('idle', () => {
     label.htmlFor = id;
     label.textContent = id;
 
-    // show or hide layer when the toggle is clicked.
+    // show or hide layer when the toggle is clicked
     link.onclick = function (e) {
         const clickedLayer = this.id;
         // e.preventDefault();
@@ -123,7 +123,7 @@ map.on('idle', () => {
             'visibility'
         );
 
-        // Toggle layer visibility by changing the layout object's visibility property.
+        // toggle layer visibility by changing the layout object's visibility property
         if (visibility === 'visible') {
             map.setLayoutProperty(
               clickedLayer,
@@ -141,6 +141,7 @@ map.on('idle', () => {
         }
     };
 
+    // add cooked items to menu
     const layers = document.getElementById('level-menu');
     layers.appendChild(label);
     layers.appendChild(link);
