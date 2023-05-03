@@ -149,13 +149,11 @@ map.on('idle', () => {
 
     // when a click event occurs on a feature in the layer, open a popup at the
     // location of the feature, with its properties
-    for (const id of toggleableLayerIds) {
-      map.on('click', id, (e) => {
-        new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML('<p>level: ' + e.features[0].properties.level + '</p><p>height: ' + e.features[0].properties.height + '</p>')
-          .addTo(map);
-      });
-    };
+    map.on('click', id, (e) => {
+      new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<p>level: ' + e.features[0].properties.level + '</p><p>height: ' + e.features[0].properties.height + '</p>')
+        .addTo(map);
+    });
   }
 });
