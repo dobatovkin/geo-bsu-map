@@ -7,122 +7,88 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/dabatoukin/clgzr3dt200bs01qtgo751g7u', // style URL
   center: [27.54875, 53.89310], // starting pos[lng, lat]
   zoom: 19, // starting zoom
-  pitch: 40,
-  bearing: 20,
+  pitch: 45,
+  bearing: 110,
   antialias: true,
 });
 
+// ! list of interactive exstrusion layers to add
+const toggleableLayers = [{
+  id: 'geo-1',
+  name: '1 этаж',
+  data: 'geo-level-1.geojson',
+  visibility: 'none',
+},
+{
+  id: 'geo-2',
+  name: '2 этаж',
+  data: 'geo-level-2.geojson',
+  visibility: 'none',
+},
+{
+  id: 'geo-3',
+  name: '3 этаж',
+  data: 'geo-level-3.geojson',
+  visibility: 'none',
+},
+{
+  id: 'geo-outside',
+  name: 'снаружи',
+  data: 'geo-level-3.geojson',
+  visibility: 'visible',
+}];
+
 map.on('load', () => { // execute after map has finished loading
-
-  map.addSource('geo-src-outside', {
-    type: 'geojson',
-    data: '3level.geojson',
-  });
-  map.addLayer({
-    id: 'geo-outside',
-    type: 'fill-extrusion',
-    source: 'geo-src-outside',
-    layout: {
-      // make the layer visible by default
-      visibility: 'visible',
-    },
-    paint: {
-      // get the extrusion parameters from the source properties
-      'fill-extrusion-color': ['get', 'Color'],
-      'fill-extrusion-height': ['get', 'height'],
-      'fill-extrusion-base': ['get', 'base_height'],
-      'fill-extrusion-opacity': 0.5,
-    },
-  });
-
-  map.addSource('geo-src-1', { // 1st floor
-    type: 'geojson',
-    data: '1level.geojson',
-  });
-  map.addLayer({
-    id: 'geo-1',
-    type: 'fill-extrusion',
-    source: 'geo-src-1',
-    layout: {
-      // disable layer by default
-      visibility: 'none',
-    },
-    paint: {
-      'fill-extrusion-color': ['get', 'Color'],
-      'fill-extrusion-height': ['get', 'height'],
-      'fill-extrusion-base': ['get', 'base_height'],
-      'fill-extrusion-opacity': 0.5,
-    },
-  });
-
-  map.addSource('geo-src-2', { // 2nd floor
-    type: 'geojson',
-    data: '2level.geojson',
-  });
-  map.addLayer({
-    id: 'geo-2',
-    type: 'fill-extrusion',
-    source: 'geo-src-2',
-    layout: {
-      // disable layer by default
-      visibility: 'none',
-    },
-    paint: {
-      'fill-extrusion-color': ['get', 'Color'],
-      'fill-extrusion-height': ['get', 'height'],
-      'fill-extrusion-base': ['get', 'base_height'],
-      'fill-extrusion-opacity': 0.5,
-    },
-  });
-
-
-  map.addSource('geo-src-3', { // 3nd floor
-    type: 'geojson',
-    data: '3level.geojson',
-  });
-  map.addLayer({
-    id: 'geo-3',
-    type: 'fill-extrusion',
-    source: 'geo-src-3',
-    layout: {
-      // disable layer by default
-      visibility: 'none',
-    },
-    paint: {
-      'fill-extrusion-color': ['get', 'Color'],
-      'fill-extrusion-height': ['get', 'height'],
-      'fill-extrusion-base': ['get', 'base_height'],
-      'fill-extrusion-opacity': 0.5,
-    },
-  });
+  for (const layer of toggleableLayers){
+    map.addSource(layer.id+'-src', {
+      type: 'geojson',
+      data: layer.data,
+    });
+    map.addLayer({
+      id: layer.id,
+      type: 'fill-extrusion',
+      source: layer.id+'-src',
+      layout: {
+        visibility: layer.visibility,
+      },
+      paint: {
+        // get the extrusion parameters from the source properties
+        'fill-extrusion-color': ['get', 'color'],
+        'fill-extrusion-height': ['get', 'height'],
+        'fill-extrusion-base': ['get', 'base_height'],
+        'fill-extrusion-opacity': 1,
+      },
+    });
+  };
 });
 
 // after the last frame rendered before the map enters an "idle" state
 map.on('idle', () => {
   // if these layers were not added to the map, abort
-  if (!map.getLayer('geo-outside') || !map.getLayer('geo-1') || !map.getLayer('geo-2') || !map.getLayer('geo-3')) {
+  let ready = true
+  for (const layer of toggleableLayers) {
+    if (!map.getLayer(layer.id)) {
+      ready = false;
+    };
+  };
+  if (ready === false) {
     return;
   };
 
-  // enumerate ids for layers
-  const toggleableLayerIds = ['geo-1', 'geo-2', 'geo-3', 'geo-outside'];
-
-  let activeLayer = 'geo-outside'
-
-  for (const id of toggleableLayerIds) {
+  for (const layer of toggleableLayers) {
     // skip layers that already have a button set up.
-    if (document.getElementById(id)) {
+    if (document.getElementById(layer.id)) {
       continue;
     }
 
     // create a checkbox w/ event
     const link = document.createElement('input');
-    link.id = id;
+    link.id = layer.id;
     link.type = 'checkbox';
     link.className = 'active';
 
     const initialVisibility = map.getLayoutProperty(
-      id,
+      layer.id,
       'visibility'
     );
 
@@ -132,8 +98,8 @@ map.on('idle', () => {
     }
 
     const label = document.createElement('label');
-    label.htmlFor = id;
-    label.textContent = id;
+    label.htmlFor = layer.id;
+    label.textContent = layer.name;
 
     // show or hide layer when the toggle is clicked
     link.onclick = function (e) {
@@ -170,13 +136,12 @@ map.on('idle', () => {
 
     // when a click event occurs on a feature in the layer, open a popup at the
     // location of the feature, with its properties
-    for (const id of toggleableLayerIds) {
-      map.on('click', id, (e) => {
-        new mapboxgl.Popup()
-          .setLngLat(e.lngLat)
-          .setHTML('<p>level: ' + e.features[0].properties.level + '</p><p>height: ' + e.features[0].properties.height + '</p>')
-          .addTo(map);
-      });
-    };
+    map.on('click', layer.id, (e) => {
+      const stringProperties = JSON.stringify(e.features[0].properties);
+      new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<p>' + stringProperties +'</p>')
+        .addTo(map);
+    });
   }
 });
