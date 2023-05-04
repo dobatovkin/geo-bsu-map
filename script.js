@@ -7,8 +7,8 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/dabatoukin/clgzr3dt200bs01qtgo751g7u', // style URL
   center: [27.54875, 53.89310], // starting pos[lng, lat]
   zoom: 19, // starting zoom
-  pitch: 40,
-  bearing: 20,
+  pitch: 45,
+  bearing: 110,
   antialias: true,
 });
 
@@ -16,7 +16,7 @@ map.on('load', () => { // execute after map has finished loading
 
   map.addSource('geo-src-outside', {
     type: 'geojson',
-    data: '3level.geojson',
+    data: 'geo-level-3.geojson',
   });
   map.addLayer({
     id: 'geo-outside',
@@ -28,7 +28,7 @@ map.on('load', () => { // execute after map has finished loading
     },
     paint: {
       // get the extrusion parameters from the source properties
-      'fill-extrusion-color': ['get', 'Color'],
+      'fill-extrusion-color': ['get', 'color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
       'fill-extrusion-opacity': 0.5,
@@ -37,7 +37,7 @@ map.on('load', () => { // execute after map has finished loading
 
   map.addSource('geo-src-1', { // 1st floor
     type: 'geojson',
-    data: '1level.geojson',
+    data: 'geo-level-1.geojson',
   });
   map.addLayer({
     id: 'geo-1',
@@ -48,16 +48,16 @@ map.on('load', () => { // execute after map has finished loading
       visibility: 'none',
     },
     paint: {
-      'fill-extrusion-color': ['get', 'Color'],
+      'fill-extrusion-color': ['get', 'color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
-      'fill-extrusion-opacity': 0.5,
+      'fill-extrusion-opacity': 1,
     },
   });
 
   map.addSource('geo-src-2', { // 2nd floor
     type: 'geojson',
-    data: '2level.geojson',
+    data: 'geo-level-2.geojson',
   });
   map.addLayer({
     id: 'geo-2',
@@ -68,7 +68,7 @@ map.on('load', () => { // execute after map has finished loading
       visibility: 'none',
     },
     paint: {
-      'fill-extrusion-color': ['get', 'Color'],
+      'fill-extrusion-color': ['get', 'color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
       'fill-extrusion-opacity': 0.5,
@@ -78,7 +78,7 @@ map.on('load', () => { // execute after map has finished loading
 
   map.addSource('geo-src-3', { // 3nd floor
     type: 'geojson',
-    data: '3level.geojson',
+    data: 'geo-level-3.geojson',
   });
   map.addLayer({
     id: 'geo-3',
@@ -89,7 +89,7 @@ map.on('load', () => { // execute after map has finished loading
       visibility: 'none',
     },
     paint: {
-      'fill-extrusion-color': ['get', 'Color'],
+      'fill-extrusion-color': ['get', 'color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
       'fill-extrusion-opacity': 0.5,

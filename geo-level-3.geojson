@@ -1,6 +1,6 @@
 {
     "type": "FeatureCollection",
-    "name": "test5",
+    "name": "geo-level-3",
     "crs": {
         "type": "name",
         "properties": {
@@ -11,10 +11,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": 1,
-                "Color": "gray",
-                "base_height": 4.0,
-                "height": 8.0
+                "level": 1,
+                "color": "gray",
+                "base_height": 8.0,
+                "height": 12.0
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2263,10 +2263,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.1
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2301,10 +2301,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.2
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.2
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2339,10 +2339,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.3
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.3
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2377,10 +2377,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.4
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.4
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2415,10 +2415,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.5
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2465,10 +2465,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.6
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.6
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2515,10 +2515,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.7
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.7
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2553,10 +2553,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.8
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.8
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2591,10 +2591,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 4.9
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 8.9
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2629,10 +2629,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.0
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.0
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2667,10 +2667,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2723,9 +2723,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
                 "height": null
             },
             "geometry": {
@@ -2736,10 +2736,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.2
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.2
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2774,10 +2774,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": 1,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": 1,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2828,10 +2828,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "brown",
-                "base_height": 4.0,
-                "height": 4.0
+                "level": null,
+                "color": "brown",
+                "base_height": 8.0,
+                "height": 8.0
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2890,10 +2890,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "brown",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "brown",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3016,10 +3016,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3062,10 +3062,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3108,10 +3108,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3154,10 +3154,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3200,10 +3200,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3246,10 +3246,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3292,10 +3292,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": 1,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": 1,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3346,10 +3346,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3392,10 +3392,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3438,10 +3438,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3484,10 +3484,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3526,10 +3526,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3572,10 +3572,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3618,10 +3618,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3664,10 +3664,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3710,10 +3710,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3756,10 +3756,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3802,10 +3802,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3848,10 +3848,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "brown",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "brown",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3946,10 +3946,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3992,10 +3992,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4030,10 +4030,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4076,10 +4076,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4130,10 +4130,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4180,10 +4180,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4226,10 +4226,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4272,10 +4272,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4318,10 +4318,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "orange",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "orange",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4364,10 +4364,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.3
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.3
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4402,10 +4402,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.4
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.4
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4440,10 +4440,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.5
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4478,10 +4478,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.6
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.6
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4516,10 +4516,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.7
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.7
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4554,10 +4554,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.8
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.8
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4592,9 +4592,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
                 "height": null
             },
             "geometry": {
@@ -4630,9 +4630,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
                 "height": null
             },
             "geometry": {
@@ -4643,10 +4643,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.1
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4681,9 +4681,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
                 "height": null
             },
             "geometry": {
@@ -4694,9 +4694,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
                 "height": null
             },
             "geometry": {
@@ -4732,10 +4732,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.0
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.0
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4770,10 +4770,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 5.9
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 9.9
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4808,10 +4808,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.17
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.17
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4846,10 +4846,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.25
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.25
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4884,10 +4884,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.32
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.32
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4922,10 +4922,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.4
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.4
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4960,10 +4960,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.5
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4998,10 +4998,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.6
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.6
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5036,10 +5036,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.7
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.7
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5074,10 +5074,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.8
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.8
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5112,10 +5112,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 6.9
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 10.9
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5150,10 +5150,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 7.0
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 11.0
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5188,10 +5188,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 7.1
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 11.1
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5226,10 +5226,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 7.2
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 11.2
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5264,10 +5264,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 7.3
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 11.3
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5302,10 +5302,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 7.4
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 11.4
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5340,10 +5340,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "grey",
-                "base_height": 4.0,
-                "height": 7.5
+                "level": null,
+                "color": "grey",
+                "base_height": 8.0,
+                "height": 11.5
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5378,10 +5378,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Level": null,
-                "Color": "brown",
-                "base_height": 4.0,
-                "height": 5.1
+                "level": null,
+                "color": "brown",
+                "base_height": 8.0,
+                "height": 9.1
             },
             "geometry": {
                 "type": "MultiPolygon",
