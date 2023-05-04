@@ -137,9 +137,10 @@ map.on('idle', () => {
     // when a click event occurs on a feature in the layer, open a popup at the
     // location of the feature, with its properties
     map.on('click', layer.id, (e) => {
+      const stringProperties = JSON.stringify(e.features[0].properties);
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML('<p>level: ' + e.features[0].properties.level + '</p><p>height: ' + e.features[0].properties.height + '</p>')
+        .setHTML('<p>' + stringProperties +'</p>')
         .addTo(map);
     });
   }
