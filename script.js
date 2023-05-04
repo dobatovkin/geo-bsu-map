@@ -13,10 +13,10 @@ const map = new mapboxgl.Map({
 });
 
 map.on('load', () => { // execute after map has finished loading
- 
+
   map.addSource('geo-src-outside', {
     type: 'geojson',
-    data: 'geo-bsu.geojson',
+    data: '3level.geojson',
   });
   map.addLayer({
     id: 'geo-outside',
@@ -28,7 +28,7 @@ map.on('load', () => { // execute after map has finished loading
     },
     paint: {
       // get the extrusion parameters from the source properties
-      'fill-extrusion-color': ['get', 'color'],
+      'fill-extrusion-color': ['get', 'Color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
       'fill-extrusion-opacity': 0.5,
@@ -37,7 +37,7 @@ map.on('load', () => { // execute after map has finished loading
 
   map.addSource('geo-src-1', { // 1st floor
     type: 'geojson',
-    data: 'geo-1.geojson',
+    data: '1level.geojson',
   });
   map.addLayer({
     id: 'geo-1',
@@ -48,7 +48,7 @@ map.on('load', () => { // execute after map has finished loading
       visibility: 'none',
     },
     paint: {
-      'fill-extrusion-color': ['get', 'color'],
+      'fill-extrusion-color': ['get', 'Color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
       'fill-extrusion-opacity': 0.5,
@@ -57,7 +57,7 @@ map.on('load', () => { // execute after map has finished loading
 
   map.addSource('geo-src-2', { // 2nd floor
     type: 'geojson',
-    data: 'geo-2.geojson',
+    data: '2level.geojson',
   });
   map.addLayer({
     id: 'geo-2',
@@ -68,7 +68,28 @@ map.on('load', () => { // execute after map has finished loading
       visibility: 'none',
     },
     paint: {
-      'fill-extrusion-color': ['get', 'color'],
+      'fill-extrusion-color': ['get', 'Color'],
+      'fill-extrusion-height': ['get', 'height'],
+      'fill-extrusion-base': ['get', 'base_height'],
+      'fill-extrusion-opacity': 0.5,
+    },
+  });
+
+
+  map.addSource('geo-src-3', { // 3nd floor
+    type: 'geojson',
+    data: '3level.geojson',
+  });
+  map.addLayer({
+    id: 'geo-3',
+    type: 'fill-extrusion',
+    source: 'geo-src-3',
+    layout: {
+      // disable layer by default
+      visibility: 'none',
+    },
+    paint: {
+      'fill-extrusion-color': ['get', 'Color'],
       'fill-extrusion-height': ['get', 'height'],
       'fill-extrusion-base': ['get', 'base_height'],
       'fill-extrusion-opacity': 0.5,
@@ -79,19 +100,19 @@ map.on('load', () => { // execute after map has finished loading
 // after the last frame rendered before the map enters an "idle" state
 map.on('idle', () => {
   // if these layers were not added to the map, abort
-  if (!map.getLayer('geo-outside') || !map.getLayer('geo-1') || !map.getLayer('geo-2')) {
+  if (!map.getLayer('geo-outside') || !map.getLayer('geo-1') || !map.getLayer('geo-2') || !map.getLayer('geo-3')) {
     return;
   };
-  
+
   // enumerate ids for layers
-  const toggleableLayerIds = ['geo-1', 'geo-2', 'geo-outside'];
-  
+  const toggleableLayerIds = ['geo-1', 'geo-2', 'geo-3', 'geo-outside'];
+
   let activeLayer = 'geo-outside'
 
   for (const id of toggleableLayerIds) {
     // skip layers that already have a button set up.
     if (document.getElementById(id)) {
-        continue;
+      continue;
     }
 
     // create a checkbox w/ event
@@ -104,7 +125,7 @@ map.on('idle', () => {
       id,
       'visibility'
     );
-    
+
     // set check if layer is visible initially
     if (initialVisibility === 'visible') {
       link.checked = true;
@@ -116,30 +137,30 @@ map.on('idle', () => {
 
     // show or hide layer when the toggle is clicked
     link.onclick = function (e) {
-        const clickedLayer = this.id;
-        // e.preventDefault();
-        e.stopPropagation();
+      const clickedLayer = this.id;
+      // e.preventDefault();
+      e.stopPropagation();
 
-        const visibility = map.getLayoutProperty(
-            clickedLayer,
-            'visibility'
+      const visibility = map.getLayoutProperty(
+        clickedLayer,
+        'visibility'
+      );
+
+      // toggle layer visibility by changing the layout object's visibility property
+      if (visibility === 'visible') {
+        map.setLayoutProperty(
+          clickedLayer,
+          'visibility',
+          'none');
+        this.className = '';
+      } else {
+        this.className = 'active';
+        map.setLayoutProperty(
+          clickedLayer,
+          'visibility',
+          'visible'
         );
-
-        // toggle layer visibility by changing the layout object's visibility property
-        if (visibility === 'visible') {
-            map.setLayoutProperty(
-              clickedLayer,
-              'visibility',
-              'none');
-            this.className = '';
-          } else {
-            this.className = 'active';
-            map.setLayoutProperty(
-              clickedLayer,
-              'visibility',
-              'visible'
-            );
-        }
+      }
     };
 
     // add cooked items to menu
