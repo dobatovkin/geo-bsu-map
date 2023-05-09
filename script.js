@@ -140,7 +140,7 @@ map.on('idle', () => {
       const stringProperties = JSON.stringify(e.features[0].properties);
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML(`<p>${stringProperties}</p><a href="/pano/index.html">Панорама</a>`)
+        .setHTML(`<p>${stringProperties}</p><a href="pano/index.html">Панорама</a>`)
         .addTo(map);
     });
   }
