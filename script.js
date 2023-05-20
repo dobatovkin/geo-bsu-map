@@ -15,7 +15,7 @@ const map = new mapboxgl.Map({
 // 
 const modelOrigin = [27.54875, 53.89310];
 const modelAltitude = 0;
-const modelRotate = [Math.PI / 2, 0, 0];
+const modelRotate = [0, 0, 0];
  
 const modelAsMercatorCoordinate = mapboxgl.MercatorCoordinate.fromLngLat(modelOrigin,
   modelAltitude
@@ -34,7 +34,7 @@ const modelTransform = {
 const THREE = window.THREE;
 
 const customLayer = {
-  id: '3d-model',
+  id: 'geo-outside',
   type: 'custom',
   renderingMode: '3d',
   onAdd: function (map, gl) {
@@ -53,7 +53,7 @@ const customLayer = {
     // use the three.js GLTF loader to add the 3D model to the three.js scene
     const loader = new THREE.GLTFLoader();
       loader.load(
-        'https://docs.mapbox.com/mapbox-gl-js/assets/34M_17/34M_17.gltf',
+        'Belarusian_State_Circus.gltf',
         (gltf) => {
         this.scene.add(gltf.scene);
       }
@@ -155,7 +155,7 @@ map.on('load', () => { // execute after map has finished loading
     });
   };
   toggleableLayers.push({
-    id: '3d-model',
+    id: 'geo-outside',
     name: 'снаружи',
     data: 'null',
     visibility: 'visible',
