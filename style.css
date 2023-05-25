@@ -38,3 +38,20 @@ label {
     padding: 0px;
     margin: 10px 0px 10px 20px;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
