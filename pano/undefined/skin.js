@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.3/19958
 // Filename: cardboard.ggsk

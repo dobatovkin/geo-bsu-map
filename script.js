@@ -225,7 +225,12 @@ map.on('idle', () => {
       const stringProperties = JSON.stringify(e.features[0].properties);
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML(`<p>${stringProperties}</p><a href="pano/index.html">Панорама</a>`)
+        .setHTML(
+          `<h3>${stringProperties.name}</h3>
+          <p>Кабинет №${stringProperties.number}</p>
+          <p>Атрибуты дебага:${stringProperties}</p>
+          <a href="pano/${stringProperties.number}">Панорама</a>`,
+        )
         .addTo(map);
     });
   });
@@ -235,6 +240,9 @@ document.getElementById('home-btn').addEventListener('click', () => {
   // fly to home location
   map.flyTo({
     center: [27.54875, 53.89310],
+    zoom: 19, // starting zoom
+    pitch: 45,
+    bearing: 110,
     essential: true,
   });
 });
