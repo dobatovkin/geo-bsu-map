@@ -222,14 +222,14 @@ map.on('idle', () => {
     // when a click event occurs on a feature in the layer, open a popup at the
     // location of the feature, with its properties
     map.on('click', layer.id, (e) => {
-      const stringProperties = JSON.stringify(e.features[0].properties);
+      const parseProperties = e.features[0].properties;
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(
-          `<h3>${stringProperties.name}</h3>
-          <p>Кабинет №${stringProperties.number}</p>
-          <p>Атрибуты дебага:${stringProperties}</p>
-          <a href="pano/${stringProperties.number}">Панорама</a>`,
+          `<h3>${parseProperties.name}</h3>
+          <p>Кабинет №${parseProperties.number}</p>
+          <p>Атрибуты дебага:${JSON.stringify(parseProperties)}</p>
+          <a href="pano/${parseProperties.number}">Панорама</a>`,
         )
         .addTo(map);
     });
