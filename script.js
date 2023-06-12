@@ -15,7 +15,7 @@ const map = new mapboxgl.Map(
 
 const modelOrigin = [27.54875, 53.89310];
 const modelAltitude = 0;
-const modelRotate = [0, 0, 0];
+const modelRotate = [Math.PI / 2, 0, 0];
 const modelAsMercatorCoordinate = mapboxgl.MercatorCoordinate.fromLngLat(
   modelOrigin,
   modelAltitude,
@@ -41,17 +41,17 @@ const customLayer = {
   onAdd(map, gl) {
     this.camera = new THREE.Camera();
     this.scene = new THREE.Scene();
-    // create two three.js lights to illuminate the model
-    const directionalLight = new THREE.DirectionalLight(0xffffff);
-    directionalLight.position.set(0, -70, 100).normalize();
-    this.scene.add(directionalLight);
-    const directionalLight2 = new THREE.DirectionalLight(0xffffff);
-    directionalLight2.position.set(0, 70, 100).normalize();
-    this.scene.add(directionalLight2);
+    // create three.js light to illuminate the model
+    const ambientLight = new THREE.AmbientLight(0x404040, 90);
+    this.scene.add(ambientLight);
+    // const directionalLight2 = new THREE.DirectionalLight(0xffffff);
+    // directionalLight2.position.set(0, 70, 100).normalize();
+    // this.scene.add(directionalLight2);
+    
     // use the three.js GLTF loader to add the 3D model to the three.js scene
     const loader = new THREE.GLTFLoader();
     loader.load(
-      'Belarusian_State_Circus.gltf',
+      'geo-outside.gltf',
       (gltf) => {
         this.scene.add(gltf.scene);
       },
