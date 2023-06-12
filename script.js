@@ -6,8 +6,8 @@ const map = new mapboxgl.Map(
     container: 'map', // container ID
     style: 'mapbox://styles/dabatoukin/clgzr3dt200bs01qtgo751g7u', // style URL
     center: [27.54875, 53.89310], // starting pos[lng, lat]
-    zoom: 19, // starting zoom
-    pitch: 45,
+    zoom: 18.5, // starting zoom
+    pitch: 60,
     bearing: 110,
     antialias: true,
   },
@@ -47,7 +47,7 @@ const customLayer = {
     // const directionalLight2 = new THREE.DirectionalLight(0xffffff);
     // directionalLight2.position.set(0, 70, 100).normalize();
     // this.scene.add(directionalLight2);
-    
+
     // use the three.js GLTF loader to add the 3D model to the three.js scene
     const loader = new THREE.GLTFLoader();
     loader.load(
@@ -240,8 +240,8 @@ document.getElementById('home-btn').addEventListener('click', () => {
   // fly to home location
   map.flyTo({
     center: [27.54875, 53.89310],
-    zoom: 19, // starting zoom
-    pitch: 45,
+    zoom: 18.5, // starting zoom
+    pitch: 60,
     bearing: 110,
     essential: true,
   });
