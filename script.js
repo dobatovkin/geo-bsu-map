@@ -228,8 +228,7 @@ map.on('idle', () => {
         .setHTML(
           `<h3>${parseProperties.name}</h3>
           <p>Кабинет №${parseProperties.number}</p>
-          <p>Атрибуты дебага:${JSON.stringify(parseProperties)}</p>
-          <a href="pano/${parseProperties.number}">Панорама</a>`,
+          <a href="pano/${parseProperties.number}" target="_blank">Панорама</a>`,
         )
         .addTo(map);
     });
@@ -246,3 +245,5 @@ document.getElementById('home-btn').addEventListener('click', () => {
     essential: true,
   });
 });
+
+map.addControl(new mapboxgl.NavigationControl());

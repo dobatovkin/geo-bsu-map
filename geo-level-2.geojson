@@ -2220,8 +2220,8 @@
         "color": "gray",
         "height": 5.2,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2260,8 +2260,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 213,
-        "name": "213"
+        "name": "213",
+        "number": 213
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2320,14 +2320,46 @@
         "color": "brown",
         "height": 5.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Левое крыло 2 этажа",
+        "number": "c2l0"
       },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
             [
+              [
+                27.548753876821213,
+                53.893360694535033
+              ],
+              [
+                27.548786525094087,
+                53.893330331461314
+              ],
+              [
+                27.5487264,
+                53.8933094
+              ],
+              [
+                27.548613,
+                53.89327
+              ],
+              [
+                27.5485761,
+                53.8932571
+              ],
+              [
+                27.5485596,
+                53.8932513
+              ],
+              [
+                27.5485436,
+                53.8932458
+              ],
+              [
+                27.5485314,
+                53.8932415
+              ],
               [
                 27.5485228,
                 53.893238
@@ -2357,84 +2389,8 @@
                 53.893359599999989
               ],
               [
-                27.5488102,
-                53.8933801
-              ],
-              [
-                27.5488213,
-                53.8933834
-              ],
-              [
-                27.5488464,
-                53.8933925
-              ],
-              [
-                27.5488628,
-                53.8933987
-              ],
-              [
-                27.5488999,
-                53.8934117
-              ],
-              [
-                27.5489173,
-                53.893417399999983
-              ],
-              [
-                27.5489459,
-                53.8934268
-              ],
-              [
-                27.5489624,
-                53.8934323
-              ],
-              [
-                27.549006,
-                53.8934472
-              ],
-              [
-                27.549022,
-                53.893452899999986
-              ],
-              [
-                27.5491094,
-                53.8934842
-              ],
-              [
-                27.5491412,
-                53.8934538
-              ],
-              [
-                27.5489539,
-                53.893388599999966
-              ],
-              [
-                27.5487264,
-                53.8933094
-              ],
-              [
-                27.548613,
-                53.89327
-              ],
-              [
-                27.5485761,
-                53.8932571
-              ],
-              [
-                27.5485596,
-                53.8932513
-              ],
-              [
-                27.5485436,
-                53.8932458
-              ],
-              [
-                27.5485314,
-                53.8932415
-              ],
-              [
-                27.5485228,
-                53.893238
+                27.548753876821213,
+                53.893360694535033
               ]
             ]
           ]
@@ -2448,8 +2404,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 211,
-        "name": "211"
+        "name": "211",
+        "number": 211
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2496,8 +2452,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 210,
-        "name": "210"
+        "name": "210",
+        "number": 210
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2544,8 +2500,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 209,
-        "name": "209"
+        "name": "209",
+        "number": 209
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2592,8 +2548,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 208,
-        "name": "208"
+        "name": "208",
+        "number": 208
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2640,8 +2596,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 207,
-        "name": "207"
+        "name": "207",
+        "number": 207
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2688,8 +2644,7 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2736,8 +2691,7 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2792,8 +2746,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 205,
-        "name": "205"
+        "name": "205",
+        "number": 205
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2840,8 +2794,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 203,
-        "name": "203"
+        "name": "203",
+        "number": 203
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2888,8 +2842,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 201,
-        "name": "201"
+        "name": "201",
+        "number": 201
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2948,8 +2902,7 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2996,8 +2949,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 202,
-        "name": "202"
+        "name": "202",
+        "number": 202
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3044,8 +2997,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 204,
-        "name": "204"
+        "name": "204",
+        "number": 204
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3092,8 +3045,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 206,
-        "name": "Картографический фонд"
+        "name": "Картографический фонд",
+        "number": 206
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3140,7 +3093,7 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "name": null
+        "name": "Лестница левого крыла,  2 этаж"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3187,8 +3140,7 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3235,8 +3187,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 214,
-        "name": "214"
+        "name": "214",
+        "number": 214
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3283,13 +3235,34 @@
         "color": "brown",
         "height": 5.1,
         "base_height": 4,
-        "name": null
+        "name": "Правое крыло 2 этажа",
+        "number": "c2r0"
       },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
             [
+              [
+                27.548618447247733,
+                53.89297266922798
+              ],
+              [
+                27.548552347811238,
+                53.892948587857504
+              ],
+              [
+                27.5485516,
+                53.892949300000112
+              ],
+              [
+                27.5484126,
+                53.8930787
+              ],
+              [
+                27.548401000000126,
+                53.893089299999986
+              ],
               [
                 27.548411900000133,
                 53.893092600000045
@@ -3319,60 +3292,8 @@
                 53.893115900000055
               ],
               [
-                27.548642800000039,
-                53.892949499999929
-              ],
-              [
-                27.5486505,
-                53.892942400000095
-              ],
-              [
-                27.548677200000043,
-                53.892916900000102
-              ],
-              [
-                27.548731200000077,
-                53.89286420000002
-              ],
-              [
-                27.548750700000085,
-                53.892845800000089
-              ],
-              [
-                27.548828799999967,
-                53.892771400000129
-              ],
-              [
-                27.548763800000131,
-                53.8927481
-              ],
-              [
-                27.548652900000207,
-                53.89285220000005
-              ],
-              [
-                27.548634045507573,
-                53.892869962260839
-              ],
-              [
-                27.548612400000025,
-                53.89289140000011
-              ],
-              [
-                27.5485516,
-                53.892949300000112
-              ],
-              [
-                27.5484126,
-                53.8930787
-              ],
-              [
-                27.548401000000126,
-                53.893089299999986
-              ],
-              [
-                27.548411900000133,
-                53.893092600000045
+                27.548618447247733,
+                53.89297266922798
               ]
             ]
           ]
@@ -3386,8 +3307,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 215,
-        "name": "215"
+        "name": "215",
+        "number": 215
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3434,8 +3355,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 218,
-        "name": "218"
+        "name": "218",
+        "number": 218
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3474,8 +3395,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 219,
-        "name": "219"
+        "name": "219",
+        "number": 219
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3522,8 +3443,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 225,
-        "name": "225"
+        "name": "225",
+        "number": 225
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3574,8 +3495,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 221,
-        "name": "221"
+        "name": "221",
+        "number": 221
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3728,8 +3649,8 @@
         "color": "gray",
         "height": 5.3,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3768,8 +3689,8 @@
         "color": "gray",
         "height": 5.4,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3808,8 +3729,8 @@
         "color": "gray",
         "height": 5.5,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3848,8 +3769,8 @@
         "color": "gray",
         "height": 5.6,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3888,8 +3809,8 @@
         "color": "gray",
         "height": 5.7,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3928,8 +3849,8 @@
         "color": "gray",
         "height": 5.8,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3968,8 +3889,8 @@
         "color": "gray",
         "height": 6.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4008,8 +3929,8 @@
         "color": "gray",
         "height": 6.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4048,8 +3969,8 @@
         "color": "gray",
         "height": 5.9,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4088,8 +4009,8 @@
         "color": "gray",
         "height": 6.17,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4128,8 +4049,8 @@
         "color": "gray",
         "height": 6.25,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4168,8 +4089,8 @@
         "color": "gray",
         "height": 6.32,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4208,8 +4129,8 @@
         "color": "gray",
         "height": 6.4,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4248,8 +4169,8 @@
         "color": "gray",
         "height": 6.5,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4288,8 +4209,8 @@
         "color": "gray",
         "height": 6.6,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4328,8 +4249,8 @@
         "color": "gray",
         "height": 6.7,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4368,8 +4289,8 @@
         "color": "gray",
         "height": 6.8,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4408,8 +4329,8 @@
         "color": "gray",
         "height": 6.9,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4448,8 +4369,8 @@
         "color": "gray",
         "height": 7.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4488,8 +4409,8 @@
         "color": "gray",
         "height": 7.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4528,8 +4449,8 @@
         "color": "gray",
         "height": 7.2,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4568,8 +4489,8 @@
         "color": "gray",
         "height": 7.3,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4608,8 +4529,8 @@
         "color": "gray",
         "height": 7.4,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4648,8 +4569,8 @@
         "color": "gray",
         "height": 7.5,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Лестница в холле 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4688,8 +4609,8 @@
         "color": "brown",
         "height": 5.1,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": "Холл 2 этажа",
+        "number": "h2"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4828,8 +4749,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4864,8 +4784,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5003,8 +4922,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5115,8 +5033,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 212,
-        "name": "212"
+        "name": "212",
+        "number": 212
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5179,8 +5097,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 216,
-        "name": "216"
+        "name": "216",
+        "number": 216
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5227,8 +5145,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 217,
-        "name": "217"
+        "name": "217",
+        "number": 217
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5279,8 +5197,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 220,
-        "name": "220"
+        "name": "220",
+        "number": 220
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5331,8 +5249,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 224,
-        "name": "224"
+        "name": "224",
+        "number": 224
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5383,8 +5301,8 @@
         "color": "orange",
         "height": 5.1,
         "base_height": 4,
-        "number": 222,
-        "name": "222"
+        "name": "222",
+        "number": 222
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5431,8 +5349,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5543,8 +5460,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5655,8 +5571,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5767,8 +5682,7 @@
         "color": "gray",
         "height": 8.0,
         "base_height": 4,
-        "number": 200,
-        "name": "200"
+        "name": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5866,6 +5780,162 @@
               [
                 27.548474988378,
                 53.89300616649345
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "level": 2,
+        "color": "brown",
+        "height": 5.1,
+        "base_height": 4,
+        "name": "Правое крыло 2 этажа",
+        "number": "c2r1"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                27.548552347811238,
+                53.892948587857504
+              ],
+              [
+                27.548618447247733,
+                53.89297266922798
+              ],
+              [
+                27.548642800000039,
+                53.892949499999929
+              ],
+              [
+                27.5486505,
+                53.892942400000095
+              ],
+              [
+                27.548677200000043,
+                53.892916900000102
+              ],
+              [
+                27.548731200000077,
+                53.89286420000002
+              ],
+              [
+                27.548750700000085,
+                53.892845800000089
+              ],
+              [
+                27.548828799999967,
+                53.892771400000129
+              ],
+              [
+                27.548763800000131,
+                53.8927481
+              ],
+              [
+                27.548652900000207,
+                53.89285220000005
+              ],
+              [
+                27.548634045507573,
+                53.892869962260839
+              ],
+              [
+                27.548612400000025,
+                53.89289140000011
+              ],
+              [
+                27.548552347811238,
+                53.892948587857504
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "level": 2,
+        "color": "brown",
+        "height": 5.1,
+        "base_height": 4,
+        "name": "Левое крыло 2 этажа",
+        "number": "c2l1"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                27.548786525094087,
+                53.893330331461314
+              ],
+              [
+                27.548753876821213,
+                53.893360694535033
+              ],
+              [
+                27.5488102,
+                53.8933801
+              ],
+              [
+                27.5488213,
+                53.8933834
+              ],
+              [
+                27.5488464,
+                53.8933925
+              ],
+              [
+                27.5488628,
+                53.8933987
+              ],
+              [
+                27.5488999,
+                53.8934117
+              ],
+              [
+                27.5489173,
+                53.893417399999983
+              ],
+              [
+                27.5489459,
+                53.8934268
+              ],
+              [
+                27.5489624,
+                53.8934323
+              ],
+              [
+                27.549006,
+                53.8934472
+              ],
+              [
+                27.549022,
+                53.893452899999986
+              ],
+              [
+                27.5491094,
+                53.8934842
+              ],
+              [
+                27.5491412,
+                53.8934538
+              ],
+              [
+                27.5489539,
+                53.893388599999966
+              ],
+              [
+                27.548786525094087,
+                53.893330331461314
               ]
             ]
           ]

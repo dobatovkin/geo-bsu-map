@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="19958" start="node5" appversion="7.0.3">
+  <panorama id="node5">
+    <input leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelbiashidpi="1.000" levelingroll="0" overlap="1" levelingpitch="0" height="2729" width="2729" leveltilesize="510">
+      <level preload="0" predecode="0" height="2729" width="2729"/>
+      <level preload="0" predecode="0" height="1364" width="1364"/>
+      <level preload="0" predecode="0" height="682" width="682"/>
+      <level preload="1" predecode="1" height="341" width="341"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start fov="70" pan="0" projection="4" tilt="0"/>
+      <flyin fov="170" pan="0" projection="9" tilt="-90"/>
+      <min fovpixel="2" pan="-180" tilt="-54.1901"/>
+      <max fov="120" pan="180" fovfisheye="360" tilt="54.1901" fovstereographic="330"/>
+    </view>
+    <userdata source="" description="" author="" tags="Downloads|финал" latitude="" longitude="" nodeid="node5" title="" info="" copyright="" customnodeid="" datetime="2023:06:05 09:42:02" comment="" heading="0"/>
+    <hotspots wordwrap="1" smoothmovement="0" width="180" height="20">
+      <label backgroundalpha="1" border="1" borderradius="1" enabled="1" background="1" backgroundcolor="0xffffff" wordwrap="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" borderalpha="1" height="20" width="180"/>
+      <polystyle bordercolor="0x0000ff" backgroundalpha="0.25098" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff" mode="0"/>
+    </hotspots>
+    <media/>
+    <transition delay="none" zoomoutpause="1" blendtime="1" zoomspeed="2" enabled="1" blendcolor="0x000000" zoomafterinfov="90" zoomfov="20" type="crossdissolve" zoomafteroutfov="20" softedge="0" zoomout="0" zoomin="0"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control contextprojections="0" simulatemass="1" invertwheel="0" lockedwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" hideabout="0" lockedmouse="0" rubberband="0" invertcontrol="1" contextfullscreen="1" speedwheel="1" sensitivity="8"/>
+  </panorama>
+  <masternode>
+    <userdata copyright="" description="" author="" tags="" comment="" title=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
