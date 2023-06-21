@@ -228,7 +228,6 @@ map.on('idle', () => {
         .setHTML(
           `<h3>${parseProperties.name}</h3>
           <p>Кабинет №${parseProperties.number}</p>
-          <p>Атрибуты дебага:${JSON.stringify(parseProperties)}</p>
           <a href="pano/${parseProperties.number}" target="_blank">Панорама</a>`,
         )
         .addTo(map);
